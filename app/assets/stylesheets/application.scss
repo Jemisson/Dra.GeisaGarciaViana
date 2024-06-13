@@ -1,1 +1,35 @@
 @import "bootstrap";
+
+#container-header{
+  background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+}
+.mask{
+  width: 55%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0px, rgba(139, 124, 100, 1) 80px);
+}
+
+.hero-box{
+  width: 80%;
+  text-align: right;
+  padding-left: 3rem;
+}
+
+.hero-box p{
+  border-right: solid 6px #E2C3B4;
+  padding-right: 10px;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+}
+
+.hero-box a{
+  border: solid 3px #ECDFBA;
+  color: #ECDFBA;
+  border-radius: 15px;
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
