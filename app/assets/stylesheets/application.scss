@@ -1,11 +1,12 @@
 @import "bootstrap";
 
 #container-header{
-  background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: right;
+  position: relative;
 }
 .mask{
   width: 55%;
@@ -33,10 +34,107 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
-
-.justify-content-end{
+.container-fluid{
   width: 90%;
 }
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 .navbar-brand{
-  margin-left: 8%;
+  width: 2.3rem;
+}
+
+.fa-bars{
+  color: #FFFFFF;
+}
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 #FFFFFF;
+}
+
+
+.mission{
+  display: flex;
+  width: 100%;
+  padding: 5% 10%;
+}
+.mission div{
+  text-align: center;
+  width: 33%;
+  padding: 0 3%;
+  color: #142236;
+  margin: 2rem 0;
+}
+.mission i{
+  font-size: 3rem;
+}
+.mission p{
+  color: #8B7C64;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+  .hero-box {
+    width: 100%;
+    text-align: center;
+    padding-left: 1rem;
+  }
+
+  .mask {
+    width: 100%;
+    background: none;
+    background: linear-gradient(to bottom, rgba(139, 124, 100, 0) 0%, rgba(139, 124, 100, 1) 60%);
+  }
+
+  #container-header {
+    background-size: 100%;
+  }
+
+  .mission{
+    flex-direction: column;
+  }
+  .mission div{
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .hero-box {
+    width: 90%;
+    text-align: center;
+    padding-left: 2rem;
+  }
+
+  #container-header {
+    background-size: 70%;
+  }
+  .mission{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mission div{
+    width: 50%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
 }

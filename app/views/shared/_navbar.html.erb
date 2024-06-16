@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <%= image_tag 'logo_branca.png', alt:'Letra G em cor branca', class:"navbar-brand"%>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
@@ -24,7 +24,7 @@
   </div>
 </nav>
 
-<div id="container-header" class="bg-image">
+<div id="container-header" class="bg-image" style="background-image: url(<%= asset_path 'hero-img.jpg' %>);">
   <div class="mask">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white hero-box">
@@ -36,3 +36,27 @@
     </div>
   </div>
 </div>
+
+<section class="mission">
+  <div>
+    <i class="fas fa-bullseye"></i>
+    <h1>Missão</h1>
+    <p>Praticar uma medicina baseada em honestidade, eficácia, confiança, credibilidade e aprimoramento constante. </p>
+  </div>
+
+  <div>
+    <i class="fas fa-hand-holding-heart"></i>
+    <h1>Visão</h1>
+    <p>Ser reconhecida pela tecnologia de ponta utilizada e procedimentos estéticos avançados com naturalidade. Entregar os melhores resultados com qualidade e eficiência, com foco na saúde física, mental e emocional dos pacientes.</p>
+  </div>
+
+  <div>
+    <i class="fas fa-flag"></i>
+    <h1>Valores</h1>
+    <p>Proporcionar o bem-estar dos meus pacientes e as melhores experiências.
+      Dedicação em cuidar de forma integrada, prezando a qualidade de vida através da ética e humanização dos serviços. </p>
+  </div>
+  
+</section>
+
+
