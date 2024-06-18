@@ -144,6 +144,23 @@
   text-decoration: none;
   color: #8B7C64;
 }
+#clinic{
+  width: 100%;
+  padding: 5% 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#clinic article{
+  width: 50%;
+}
+#clinic div{
+  width: 50%;
+  padding-left: 5%;
+}
+#clinic div img{
+  width: 30%;
+}
+
 
 @media (max-width: 575.98px) {
   .hero-box {
