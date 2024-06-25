@@ -59,8 +59,79 @@
   </article>
 
   <div class="container-pictures">
-    <img src="./images/full_size/verde.jpg" alt="">
-    <img src="./images/full_size/formatura.jpg" alt="">
-    <img src="./images/full_size/jaleco.jpg" alt="">
+    <%# <img src="./images/full_size/jaleco_resized.jpg" alt="">
+    <img src="./images/full_size/formatura.jpg" alt=""> %>
+    <img src="./images/full_size/formanda.jpg" alt="">
+    <img src="./images/full_size/formanda.jpg" alt="">
+    <img src="./images/full_size/formanda.jpg" alt="">
   </div>
 </section>
+
+<div class="carousell">
+
+  <div id="our-services">
+    <div id="header-services">
+      <p>NOSSOS SERVIÇOS</p>
+      <p>Oferecidos a você!</p>
+    </div>
+    <a href="https://www.instagram.com/drageisagarcia/">Agendar horário</a>
+  </div>
+
+  <div class="service" data-toggle="modal" data-target="#butox">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Toxina Butolínica</p>
+      <p>A toxina botulínica, popularmente conhecida como Botox, é uma proteína produzida pela bactéria Clostridium botulinum que atua bloqueando a contração muscular.</p>
+    </div>
+  </div>
+
+  <div class="service" data-toggle="modal" data-target="#preenchimento">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Preenchimento</p>
+      <p>O preenchimento é um procedimento estético que utiliza substâncias como ácido hialurônico para restaurar volume, suavizar rugas e melhorar o contorno facial.</p>
+    </div>
+  </div>
+
+  <div class="service" data-toggle="modal" data-target="#ultraformer">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Ultraformer</p>
+      <p>O Ultraformer é um tratamento estético não invasivo que utiliza ultrassom micro e macrofocado para estimular a produção de colágeno, resultando em sustentação e firmeza da pele.</p>
+    </div>
+  </div>
+
+  <div class="service" data-toggle="modal" data-target="#microagulhamento">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Microagulhamento (MMP) Capilar</p>
+      <p>O microagulhamento capilar é um procedimento estético que utiliza microagulhas estéreis para criar pequenas perfurações no couro cabeludo, estimulando a circulação sanguínea, a produção de colágeno e revitalização dos fios de cabelo.</p>
+    </div>
+  </div>
+  
+  <div class="service" data-toggle="modal" data-target="#peeling">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Peeling</p>
+      <p>O peeling é um procedimento estético que promove a renovação da pele através da aplicação de substâncias químicas ou técnicas físicas.</p>
+    </div>
+  </div>
+  
+  <div class="service" data-toggle="modal" data-target="#limpeza">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Limpeza de pele</p>
+      <p>A limpeza de pele é um procedimento estético que remove impurezas, células mortas e excesso de oleosidade da pele.</p>
+    </div>
+  </div>
+  
+  <div class="service" data-toggle="modal" data-target="#fotona">
+    <i class="fa fa-syringe"></i>
+    <div>
+      <p class="carousel-title">Fotona</p>
+      <p>Fotona é uma tecnologia de laser avançada utilizada em diversos tratamentos estéticos e terapêuticos. Combinando diferentes tipos de laser, o Fotona oferece soluções eficazes para rejuvenescimento da pele.</p>
+    </div>
+  </div>
+
+  <%= render partial: 'home/shared/modals' %>
+</div>
