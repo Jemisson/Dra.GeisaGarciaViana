@@ -13,7 +13,7 @@ set :application_name, 'dra_geisa'
 set :domain, '108.181.224.45'
 set :deploy_to, '/home/production/dra_geisa'
 set :repository, 'git@github.com:Jemisson/Dra.GeisaGarciaViana.git'
-set :branch, 'production'
+set :branch, 'master'
 set :user, 'production'
 set :port, '22'
 set :forward_agent, true
@@ -73,7 +73,7 @@ task :production do
   set :user, 'production'
   set :domain, '108.181.224.45'
   set :deploy_to, '/home/production/dra_geisa'
-  set :branch, 'production'
+  set :branch, 'master'
 end
 
 # Server staging
