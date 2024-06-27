@@ -16,6 +16,7 @@ gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
+  gem 'mina', '0.3.8'
   gem 'debug', platforms: %i[mri windows]
 end
 

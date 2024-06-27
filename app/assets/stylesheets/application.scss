@@ -316,11 +316,15 @@ article {
 .profile-pic img {
   width: 60%;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
 }
 .social{
   font-size: 2rem;
+  margin-top: -1.3rem;
+  color: #fff;
+}
+.social a i{
+  color: #fff;
+  margin: 0 2rem;
 }
 .details{
   width: 33%;
@@ -402,6 +406,17 @@ article {
     width: 100%;
     margin-bottom: 2rem;
   }
+  .qr-code,
+  .profile-pic,
+  .details {
+    width: 100%;
+  }
+  .details{
+    text-align: center;
+  }
+  .details #identification{
+    border: none;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -457,6 +472,9 @@ article {
   #gallery img:nth-child(6),
   #gallery img:nth-child(7) {
     width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
   }
 }
 
