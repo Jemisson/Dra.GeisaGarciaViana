@@ -1,8 +1,15 @@
 @import "bootstrap";
 @import url('https://fonts.cdnfonts.com/css/amalfi-coast');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 #container-header{
-  background-size: 50%;
+  background-size: cover;
+  background-position: center top; 
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -11,7 +18,7 @@
 }
 .mask{
   width: 55%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0px, rgba(139, 124, 100, 1) 80px);
+  // background: linear-gradient(to right, rgba(255, 255, 255, 0) 0px, rgba(139, 124, 100, 1) 80px);
 }
 
 .hero-box{
@@ -30,7 +37,7 @@
 .hero-box a{
   border: solid 3px #ECDFBA;
   color: #ECDFBA;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 0.6rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -67,13 +74,14 @@
 }
 
 .mission{
-  display: flex;
   width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 5% 10%;
 }
 .mission div{
   text-align: center;
-  width: 33%;
+  width: 80%;
   padding: 0 3%;
   color: #142236;
   margin: 2rem 0;
@@ -83,6 +91,32 @@
 }
 .mission p{
   color: #8B7C64;
+}
+.quote-container {
+  background: #ffffff;
+  padding: 4rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  font-size: .8em;
+  color: #555;
+}
+.quote-icon {
+  font-size: 3em;
+  color: #555;
 }
 
 .image-galery-hero{
@@ -100,7 +134,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #E2C3B4;
+  background-color: #DEC8BC;
 }
 #whoami{
   width: 20%;
@@ -143,7 +177,10 @@
 }
 #social a{
   text-decoration: none;
-  color: #8B7C64;
+  color: #0B213A;
+}
+#social img{
+  width: 28px;
 }
 #clinic{
   width: 100%;
@@ -369,17 +406,8 @@ article {
     text-align: center;
     padding-left: 2rem;
   }
-
-  #container-header {
-    background-size: 70%;
-  }
   .mission{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .mission div{
-    width: 50%;
+    padding: 5% 0;
   }
   .image-galery-hero img{
     width: 50%;
@@ -430,14 +458,6 @@ article {
     width: 100%;
     background: none;
     background: linear-gradient(to bottom, rgba(139, 124, 100, 0) 0%, rgba(139, 124, 100, 1) 60%);
-  }
-
-  #container-header {
-    background-size: 100%;
-  }
-
-  .mission{
-    flex-direction: column;
   }
   .mission div{
     width: 100%;
