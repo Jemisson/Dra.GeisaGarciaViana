@@ -169,6 +169,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.8.0)
     rack (3.1.4)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -277,6 +279,7 @@ DEPENDENCIES
   mina (= 0.3.8)
   pg (~> 1.1)
   puma (>= 5.0)
+  rack-cors
   rails (~> 7.1.0)
   sassc-rails
   selenium-webdriver
