@@ -77,13 +77,13 @@ task :production do
 end
 
 # Server staging
-task :staging do
-  set :rails_env, 'staging'
-  set :user, 'development'
-  set :domain, '108.181.224.45'
-  set :deploy_to, '/home/development/dra_geisa'
-  set :branch, 'master'
-end
+# task :staging do
+#   set :rails_env, 'staging'
+#   set :user, 'development'
+#   set :domain, '108.181.224.45'
+#   set :deploy_to, '/home/development/dra_geisa'
+#   set :branch, 'master'
+# end
 
 # Server preview
 # task :preview do
