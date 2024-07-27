@@ -58,7 +58,7 @@ task deploy: :remote_environment do
     invoke :'deploy:link_shared_paths'
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
-    invoke :'deploy:cleanup'
+    invoke :'rails:assets_precompile'
 
     to :launch do
       queue %(echo -n '-----> Creating new restart.txt: ')
