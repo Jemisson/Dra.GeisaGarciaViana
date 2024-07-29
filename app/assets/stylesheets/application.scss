@@ -489,6 +489,9 @@ article {
 }
 
 @media screen and (max-width: 575.98px) {
+  .modal-services img{
+    display: none;
+  }
   .hero-box {
     width: 100%;
     text-align: center;
